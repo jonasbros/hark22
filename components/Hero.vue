@@ -9,7 +9,12 @@
           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
           eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.</p>
-        <button class="btn btn-primary">Get Started</button>
+        <button class="btn">Button</button>
+        <button class="btn btn-primary">Button</button>
+        <button class="btn btn-secondary">Button</button>
+        <button class="btn btn-accent">Button</button>
+        <button class="btn btn-ghost">Button</button>
+        <button class="btn btn-link">Button</button>
       </div>
     </div>
   </div>
