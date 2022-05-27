@@ -1,5 +1,10 @@
 <template>
-  <div data-theme="rosepine">
-    <NuxtLayout name="custom" />
+  <div>
+    <TheHeader />
+    <div data-theme="hark">
+      <NuxtLayout name="default" />
+    </div>
+    <LoadingScreen />
+    <TheFooter />
   </div>
 </template>

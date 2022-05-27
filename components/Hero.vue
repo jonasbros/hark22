@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
   <div class="hero min-h-screen" style="background-image: url(https://api.lorem.space/image/drink?w=1000&h=800);">
     <div class="hero-overlay bg-opacity-60"></div>
@@ -15,6 +19,8 @@
         <button class="btn btn-accent">Button</button>
         <button class="btn btn-ghost">Button</button>
         <button class="btn btn-link">Button</button>
+        <LoginBtn/>
+        <LogoutBtn/>
       </div>
     </div>
   </div>
