@@ -9,7 +9,6 @@
 
   onMounted(() => {
     setTimeout(() => {
-      console.log(user.value)
       if(user.value) {
         router.push('/')
       }  

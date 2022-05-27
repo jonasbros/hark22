@@ -1,8 +1,13 @@
-export default defineNuxtRouteMiddleware((to, _from) => {
-  const user = useSupabaseUser()
+import { useMainStore } from '~~/store/store';
 
-  if(!user.value) {
+export default defineNuxtRouteMiddleware((to, from) => {
+  const user = useSupabaseUser()
+  const mainStore = useMainStore()
+  console.log(user)
+  if (user) {
+    mainStore.isAuth = !!user
+    mainStore.userInfo = user
+  } else {
     return navigateTo('/login')
   }
-
 })

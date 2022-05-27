@@ -11,16 +11,14 @@ const mainStore = useMainStore()
 const login = async (provider) => {
   mainStore.isLoading = true
   const { user, error } = await client.auth.signIn({ provider })
-
+  mainStore.isAuth = !!user
+  mainStore.userInfo = user
   if (error) {
     return alert('Something went wrong!')
   }
-
-  // location.reload()
 }
 
   onMounted(() => {
-    console.log(user)
     if (user.value) {
       router.push('/')
     }

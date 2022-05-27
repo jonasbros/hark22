@@ -3,6 +3,8 @@ import { defineStore, acceptHMRUpdate} from 'pinia'
 
 const state = () => ({
   isLoading: false,
+  isAuth: false,
+  userInfo: null,
 })
 
 const actions = {
